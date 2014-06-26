@@ -28,91 +28,106 @@
         height: 57px;
         background-color: #282828;
         display: block;
-        overflow:hidden;
         
         #header_top_content{
-            width:1920px;
+            width:90%;
             margin:0 auto;
-            overflow:hidden;
+            max-width:1920px;
             
             img{
                 margin: 15px;
+                float:left;
             }
             
             .nav{
-                position: relative;
-                top:20px;
-                margin: 0 0 50px 50px;
+                float:left;
                 text-transform: uppercase;
+                list-style:none;
                 
-                a{
-                    text-decoration: none;
-                    color: white;
-                    font-family: Arial;
-                    font-weight: bold;
-                    font-size: 14px;
+                
+                li{
+                    float:left;
                     
-                }
-                
-                .select{
-                    text-transform: uppercase;
-                    background-color: #282828;
-                    font-family: Arial;
-                    font-weight: bold;
-                    font-size: 14px;
-                    color: white;
-                    border: none;
-                    cursor: pointer;
-                    margin-left: 50px;
-                }
-                
-                .select_2{
-                    text-transform: uppercase;
-                    background-color: #282828;
-                    font-family: Arial;
-                    font-weight: bold;
-                    font-size: 14px;
-                    color: white;
-                    border: none;
-                    cursor: pointer;
-                    margin-left: 20px;
+                    a{
+                        text-decoration: none;
+                        color: #fff;
+                        font-family: Arial;
+                        font-weight: bold;
+                        font-size: 14px;
+                        padding:20px;
+                        display:block;
+                        float:left;
+                        position:relative;
+                        z-index:300;
+                        
+                        &:hover{
+                            text-decoration:underline;
+                            background:#1A1A1A;     
+                        }
+                    }
+                    
+                    &.dropdown{
+                        & > a:after{
+                            background:url(/img/nav_arrow.png) top left no-repeat;
+                            width:9px;
+                            height:4px;
+                            margin-left:10px;
+                            margin-top:7px;
+                            display:block;
+                            content:" ";
+                            float:right;
+                        }
+                        
+                        .sub{
+                            list-style:none;
+                            position:absolute;
+                            display:none;
+                            background:#282828;
+                            padding-top:57px;
+                            z-index:200;
+                            
+                            li{
+                                float:none;
+                                padding-top:4px;
+                                padding-bottom:4px;
+                            }
+                        }
+                    }
                 }
             }
         }
         
     }
-
+    
+    
+    #header_btm{
+        background: url(../img/header.png) no-repeat;
+        width: 100%;
+        max-width: 1920px;
+        height: 106px;
+        
+        h1{
+            font-family: Arial;
+            font-size: 29px;
+            font-weight: lighter;
+            color: white;
+            text-align: center;
+            padding-top: 27px;
+            text-transform: uppercase;
+            margin: 0 auto;
+        }
+        h3{
+            font-family: Arial;
+            font-size: 17px;
+            font-weight: lighter;
+            color: white;
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
 }
 
-
-
-
-.header_btm{
-	background: url(../img/header.png) no-repeat;
-	width: 100%;
-	max-width: 1920px;
-	height: 106px;
-}
-.header_btm h1{
-	font-family: Arial;
-	font-size: 29px;
-	font-weight: lighter;
-	color: white;
-	text-align: center;
-	padding-top: 27px;
-	text-transform: uppercase;
-	margin: 0 auto;
-}
-.header_btm h3{
-	font-family: Arial;
-	font-size: 17px;
-	font-weight: lighter;
-	color: white;
-	text-align: center;
-	margin: 0 auto;
-}
 .big_content{
 	width: 90%;
 	margin: 0 auto;
-
 }
