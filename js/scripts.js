@@ -7,7 +7,7 @@ function dropdown_init() {
     });
     
     $('#header .nav li.dropdown').hover(function(){
-        $(this).children('.sub').stop().slideDown(200);
+        $(this).children('.sub').stop().slideDown(100);
     }, function(){
         $(this).children('.sub').stop().slideUp(200);
     });

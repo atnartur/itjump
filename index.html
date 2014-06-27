@@ -5,14 +5,15 @@
     <meta charset="utf-8">
     <script src="js/jquery.min.js"></script>
     <link rel="stylesheet/less" type="text/css" href="style/base.less">
+    <link rel="stylesheet/less" type="text/css" href="style/media.less">
     <link rel="stylesheet/less" type="text/css" href="style/index.less">
     <script src="js/less.min.js"></script>
     <script src="js/scripts.js"></script>
 </head>
 <body>
-   	<div id="header">
+   	<div id="header" class="container_min">
    		<div id="header_top">
-            <div id="header_top_content">
+            <div id="header_top_content" class="container">
                 <a href="#">
                     <img src="img/logo.png">
                 </a>
@@ -21,8 +22,11 @@
                     <li>
                         <a href="#">Pages</a>
                         <ul class="sub">
-                            <li><a href="#">Sub 1</a></li>
-                            <li><a href="#">Sub dsfg sdfgsdf g2</a></li>
+                            <li><a href="main.html">Main</a></li>
+                            <li><a href="partner.html">Partner</a></li>
+                            <li><a href="people.html">People</a></li>
+                            <li><a href="project.html">Project</a></li>
+                            <li><a href="texters.html">Texters</a></li>
                         </ul>
                     </li>
                     <li>
@@ -43,94 +47,76 @@
                 </ul>
             </div>
    		</div>
-   		<div id="header_btm">
+   		<div id="header_btm" class="container_min">
             <h1>Single blog title</h1>
             <h3>This is a single blog caption</h3>
    		</div>
    	</div>
-   	<div class="big_content">
-        <div class="content">
-            <div class="content_img">
-                <img src="img/content.png">
+   	<div class="container">
+        <div class="gallery">
+            <div class="gallery_img">
+                <img src="img/gallery.png">
             </div>
-            <div class="content_img">
-                <img src="img/content.png">
+            <div class="gallery_img">
+                <img src="img/gallery.png">
             </div>
-            <div class="content_img">
-                <img src="img/content.png">
+            <div class="gallery_img">
+                <img src="img/gallery.png">
             </div>
-            <div class="content_img">
-                <img src="img/content.png">
+            <div class="gallery_img">
+                <img src="img/gallery.png">
             </div>
-            <div class="content_img">
-                <img src="img/content.png">
+            <div class="gallery_img">
+                <img src="img/gallery.png">
             </div>
-        </div>
-        <div class="content_two">
-            <div class="content_img">
-                <img src="img/content.png">
+            <div class="gallery_img">
+                <img src="img/gallery.png">
             </div>
-            <div class="content_img">
-                <img src="img/content.png">
+            <div class="gallery_img">
+                <img src="img/gallery.png">
             </div>
-            <div class="content_img">
-                <img src="img/content.png">
+            <div class="gallery_img">
+                <img src="img/gallery.png">
             </div>
-            <div class="content_img">
-                <img src="img/content.png">
+            <div class="gallery_img">
+                <img src="img/gallery.png">
             </div>
-            <div class="content_img">
-                <img src="img/content.png">
+            <div class="gallery_img">
+                <img src="img/gallery.png">
             </div>
-        </div>
-        <div class="content_three">
-            <div class="content_img">
-                <img src="img/content.png">
+            <div class="gallery_img">
+                <img src="img/gallery.png">
             </div>
-            <div class="content_img">
-                <img src="img/content.png">
+            <div class="gallery_img">
+                <img src="img/gallery.png">
             </div>
-            <div class="content_img">
-                <img src="img/content.png">
+            <div class="gallery_img">
+                <img src="img/gallery.png">
             </div>
-            <div class="content_img">
-                <img src="img/content.png">
+            <div class="gallery_img">
+                <img src="img/gallery.png">
             </div>
-            <div class="content_img">
-                <img src="img/content.png">
+            <div class="gallery_img">
+                <img src="img/gallery.png">
             </div>
         </div>
-        <div class="content_four">
-            <div class="content_img">
-                <img src="img/content.png">
-            </div>
-            <div class="content_img">
-                <img src="img/content.png">
-            </div>
-            <div class="content_img">
-                <img src="img/content.png">
-            </div>
-            <div class="content_img">
-                <img src="img/content.png">
-            </div>
-            <div class="content_img">
-                <img src="img/content.png">
-            </div>
-        </div>
-        <div class="content_btm">
-            <button>Next ›</button>
-            <button>2</button>
-            <button>1</button>
+        <div class="pager container">
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">Next &rsaquo;</a>
         </div>
     </div>
-    <div class="footer">
-        <h3>Copyright © 2014</h3>
-        <div class="nav_btm">
-            <a href="#">Home</a>
-            <a href="#">Pages</a>
-            <a href="#">Projects</a>
-            <a href="#">About</a>
-            <a href="#">Gallery</a>
+    <div id="footer" class="container_min">
+        <div class="container">
+            <h3>Copyright © 2014</h3>
+            <div class="nav_btm">
+                <a href="#">Home</a>
+                <a href="#">Pages</a>
+                <a href="#">Projects</a>
+                <a href="#">About</a>
+                <a href="#">Gallery</a>
+            </div>
         </div>
     </div>
 </body>
