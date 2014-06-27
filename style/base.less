@@ -27,8 +27,10 @@ img{
     border:0;
 }
 
+@max-width: 1246px;
+
 .container{
-    max-width:1246px;
+    max-width:@max-width;
     margin:0 auto;
     overflow:hidden;
 }
@@ -292,11 +294,12 @@ img{
     overflow: hidden;
     
     #content_main_left{
-        width:845px;
+        @content_main_left_width: 896px; 
+        width:@content_main_left_width;
         float:left;
         overflow: hidden;
         
-        &.main_posts{
+        .main_posts{
             .post{
                 overflow: hidden;
                 clear: both;
@@ -304,8 +307,11 @@ img{
                 margin-bottom:30px;
                 display: block;
                 
+                @post_img_width: 251px; 
+                
                 .img{
-                    width:251px;
+                    
+                    width:@post_img_width;
                     float:left;
                     display: block;
                     
@@ -346,7 +352,7 @@ img{
                 .post_content{
                     float:left;
                     margin-left: 29px;
-                    width:564px;
+                    width:@content_main_left_width - @post_img_width - 29;
                     
                     h1{
                         font-family: Arial;
@@ -392,15 +398,64 @@ img{
     }
 
     #content_main_right{
+        margin-left:50px;
         float: left;
         overflow: hidden;
-    }
+        width:  300px;
+        
+        
+        .block{
+            margin-top:30px;
+            
+            h1{
+                font-family: Arial;
+                font-weight: normal;
+                font-size: 19px;
+            }
+            
+            &.sidebar_list{
+                .item{
+                    overflow: hidden;
+                    clear: both;
+                    margin-top:10px;
+                    
+                    img{
+                        float:left;
+                    }
+                    
+                    .item_content{
+                        float:left;
+                        margin-left: 15px;
+                        
+                        h2{
+                            margin-top:5px;
+                            font-family: Arial;
+                            font-size: 14px;
+                        }
+                        
+                        .date{
+                            margin-top:9px;
+                            font-family: Arial;
+                            font-weight: bold;
+                            font-size: 14px;
+                            color: #aeaeae;
+                        }
+                    }
+                }
+            } // sidebar_list
+            
+            .smena{
+                img{
+                    margin-top:20px;
+                }
+            }
+        } // block
+    } // content_main_right
 }
 
 
 #footer{
 	width: 100%;
-	max-width: 1920px;
 	height: 65px;
 	background-color: #282828;
     
