@@ -165,18 +165,6 @@ img{
         background: url(../img/lead_main.png) center no-repeat;
         background-size:cover;
         
-        /*
-        ÏÂÌ˛
-        106
-        h1
-        52
-        h2
-        58
-        h3
-        78
-        a
-        */
-        
         h1{
             font-family: Arial;
             font-size: 38px;
@@ -207,7 +195,7 @@ img{
         a{
             text-decoration: none;
             margin-top:72px;
-            padding: 20px;
+            padding: 15px 20px;
             color: white;
             background-color: #f06469;
             font-family: Arial;
@@ -219,11 +207,6 @@ img{
         }
     }
 } // #header_btm
-
-.big_content{
-	width: 90%;
-	margin: 0 auto;
-}
 
 .gallery{
     overflow: hidden;
@@ -263,6 +246,123 @@ img{
         
         &:last{
             margin-right:0;
+        }
+    }
+}
+
+.main_first_posts{
+    .post{
+        padding-top:40px;
+        padding-bottom:40px;
+        padding-right:50px;
+        padding-left:50px;
+        width:315px;
+        float:left;
+        text-align: center;
+        
+        h1{
+            margin-top:35px;
+            font-family: Arial;
+            font-weight: bold;
+            font-size: 20px;
+            color: #292929;
+            margin-top: 20px;
+        }
+        h2{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 17px;
+            width: 360px;
+            color: #aeaeae;
+            margin: 0 auto;
+        }
+        
+        .img{
+            width:293px;
+            height:168px;
+            overflow: hidden;
+            margin:0 auto;
+        }
+        
+    }
+}
+
+#content_main{
+    #content_main_left{
+        &.main_posts{
+            .post{
+                overflow: hidden;
+                clear: both;
+                margin-top:30px;
+                margin-bottom:30px;
+                
+                img{
+                    width:251px;
+                    float:left;
+                    
+                    &:after{
+                        font-size:21px;
+                        font-weight: 100;
+                        font-family: Arial;
+                        background: #000;
+                        color:#fff;
+                        height:25px;
+                        padding-top:3px;
+                        margin-top:-50px;
+                        display: block;
+                    }
+                    
+                    &.event:after{
+                        content: '—Å–æ–±—ã—Ç–∏–µ';
+                        text-transform: uppercase;
+                        background: #3D3D3D;
+                    }
+                }
+                
+                .post_content{
+                    float:left;
+                    margin-left: 29px;
+                    width:564px;
+                    
+                    h1{
+                        font-family: Arial;
+                        font-weight: bold;
+                        font-size: 22px;
+                        color: #292929;
+                        margin-top:-4px;
+                    }
+                    
+                    .time{
+                        margin-top:13px;
+                        font-family: Arial;
+                        font-weight: bold;
+                        font-size: 15px;
+                        color: #aeaeae;
+                        text-transform: uppercase;
+                    }
+                    
+                    p{
+                        margin-top:15px;
+                        font-family: 'Open Sans', sans-serif;
+                        font-size: 16px;
+                        color: #a6a6a6;
+                        line-height: 1.2;
+                    }
+                    
+                    a{
+                        margin-top:15px;
+                        color: #f16e73;
+                        font-family: Arial;
+                        font-weight: bold;
+                        font-size: 15px;
+                        text-decoration: none;
+                        display: block;
+                        
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }   
         }
     }
 }
