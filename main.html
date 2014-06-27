@@ -1,50 +1,74 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Main</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet/less" type="text/css" href="style/main.less">
-        <link rel="stylesheet/less" type="text/css" href="style/base.less">
-        <script src="js/less.min.js"></script>
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic-ext,cyrillic,greek,greek-ext' rel='stylesheet' type='text/css'>
-   </head>
-   <body>
-   	<div class="header">
-   		<div class="header_top">
-   			<img src="img/logo.png">
-   			<div class="nav">
-   				<a href="#">Home</a>
-   				<select class="select">
-   					<option>Pages</option>
-   					<option>Home</option>
-   					<option>Gallery</option>
-   					<option>People</option>
-   					<option>Partner</option>
-   				</select>
-   				<select class="select_2">
-   					<option>Projects</option>
-   					<option>Home</option>
-   					<option>Gallery</option>
-   					<option>People</option>
-   					<option>Partner</option>
-   				</select>
-   				<select class="select_2">
-   					<option>About</option>
-   					<option>Home</option>
-   					<option>Gallery</option>
-   					<option>People</option>
-   					<option>Partner</option>
-   				</select>
-   				<a href="#">Gallery</a>
-   			</div>
-   		</div>
-   			<div class="header_btm">
-               <h1>It-Jump - integer erat</h1>
-               <h2>Let’s pemtatibus et magnis dis</h2>
-               <h3>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla. Nullam id dolor id vehicula ut iden ut ede...</h3>
-               <button>Learn more</button>
-            </div>
+<head>
+    <title>Main - IT-Jump</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic-ext,cyrillic,greek,greek-ext' rel='stylesheet' type='text/css'>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/base.js"></script>
+    <link rel="stylesheet/less" type="text/css" href="style/base.less">
+    <link rel="stylesheet/less" type="text/css" href="style/main.less">
+    <link rel="stylesheet/less" type="text/css" href="style/media.less">
+        
+    
+    <script>
+        less = {
+            debug: true,
+            env: "development"
+        }
+    </script>
+    <script src="js/less.min.js"></script>
+</head>
+<body>
+   	<div id="header" class="container_min">
+        <div id="header_content" class="container">
+            <a href="#">
+                <img src="img/logo.png">
+            </a>
+            <div id="menu_toggler"></div>
+            <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li>
+                    <a href="#">Pages</a>
+                    <ul class="sub">
+                        <li><a href="main.html">Main</a></li>
+                        <li><a href="partner.html">Partner</a></li>
+                        <li><a href="people.html">People</a></li>
+                        <li><a href="project.html">Project</a></li>
+                        <li><a href="texters.html">Texters</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Projects</a>
+                    <ul class="sub">
+                        <li><a href="#">Sub 1</a></li>
+                        <li><a href="#">Sub 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                    <ul class="sub">
+                        <li><a href="#">Sub 1</a></li>
+                        <li><a href="#">Sub 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </div>
    	</div>
+    <div id="lead" class="main container_min">
+        <div class="container">
+            <div id="lead_main_content">
+                <h1>It-Jump - integer erat</h1>
+                <h2>Let’s pemtatibus et magnis dis</h2>
+                <h3>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla. Nullam id dolor id vehicula ut iden ut ede...</h3>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
       <div class="content">
          <div class="content_img">
             <div class="des">

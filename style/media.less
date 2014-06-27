@@ -55,60 +55,58 @@
     }
     
     #header{
-        #header_top	{
+        text-align: center;
+        
+        a{
             text-align: center;
             
-            a{
-                text-align: center;
-                
-                img{
-                    float:none !important;
-                }
+            img{
+                float:none !important;
             }
+        }
+        
+        #menu_toggler{
+            display:block !important;
+        }
+        
+        .nav{
+            display:none;
+            position:absolute;
+            width:100%;
             
-            #menu_toggler{
-                display:block !important;
-            }
-            
-            .nav{
-                display:none;
-                position:absolute;
+            li{
+                float:none;
                 width:100%;
                 
-                li{
-                    float:none;
+                a{
                     width:100%;
+                    padding-left:0 !important;
+                    padding-right:0 !important;
+                    text-align: center;
                     
-                    a{
-                        width:100%;
-                        padding-left:0 !important;
-                        padding-right:0 !important;
-                        text-align: center;
-                        
-                        &:after{
-                            display:none !important;
-                        }
+                    &:after{
+                        display:none !important;
                     }
+                }
+                
+                .sub{
+                    display:block !important;
+                    position:relative !important;
+                    float:left;
+                    width:100%;
+                    padding-top:0 !important;
+                    background: #1a1a1a;
+                    overflow: hidden;
+                    box-shadow: inset 0 2px 3px #000;
+                    padding-bottom:10px;
                     
-                    .sub{
-                        display:block !important;
-                        position:relative !important;
+                    li{
                         float:left;
-                        width:100%;
-                        padding-top:0 !important;
-                        background: #1a1a1a;
-                        overflow: hidden;
-                        box-shadow: inset 0 2px 3px #000;
-                        padding-bottom:10px;
                         
-                        li{
-                            float:left;
-                            
-                            a{
-                                padding:15px;
-                                padding-left: 50px;
-                                font-size:12px !important;
-                            }
+                        a{
+                            padding:15px;
+                            padding-left: 50px;
+                            font-size:12px !important;
                         }
                     }
                 }
