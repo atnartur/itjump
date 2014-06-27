@@ -19,14 +19,21 @@
     -khtml-border-radius: 0px;
 }
 
+body{
+    background: #fff;
+    color:#000;
+}
+
+img{
+    border:0;
+}
+
 .container{
     max-width:1246px;
-    min-width:800px;
     margin:0 auto;
     overflow:hidden;
 }
 .container_min{
-    min-width:800px;
     margin:0 auto;
     overflow:hidden;
 }
@@ -47,13 +54,31 @@
             
             img{
                 margin: 15px;
+                margin-left:0;
                 float:left;
+            }
+
+            #menu_toggler{
+                background: url(/img/nav_arrow.png) center no-repeat;
+                width:57px;
+                height:57px;
+                position:absolute;
+                z-index:400;
+                right:0;
+                top:0;
+                cursor:pointer;
+                display:none;
+                
+                &:hover{
+                    background-color:#1A1A1A;
+                }
             }
             
             .nav{
                 float:left;
                 text-transform: uppercase;
                 list-style:none;
+                background: #282828;
                 
                 li{
                     float:left;
@@ -163,7 +188,6 @@
     padding-top:45px;
     padding-bottom:45px;
     position: relative;
-    right:-10px;
     
     a{
         text-decoration: none;
@@ -179,6 +203,10 @@
         &:hover, &.active{
             background: #f06469;
             color: white;
+        }
+        
+        &:last{
+            margin-right:0;
         }
     }
 }
@@ -197,14 +225,23 @@
         font-weight: lighter;
         float: left;
         margin: 20px;
-        width: 200px;
+        
+        a{
+            color: #757575;
+            
+            &:hover{
+                color:#fff;
+            }
+        }
     }
     
     .nav_btm{
         width: 100%;
+        text-align: right;
+        padding-top:20px;
+        padding-bottom:20px;
         
         a{
-            float: right; 
             text-decoration: none;
             font-family: Arial;
             font-size: 14px;

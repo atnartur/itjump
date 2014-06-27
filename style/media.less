@@ -1,23 +1,131 @@
 @media (min-width: 1275px){
-    .gallery{
+    .gallery{ // 5 колонок галерея
         width:1275px;
     }
+    .container{
+        width:1247px;
+    }
 }
 
-@media (max-width: 1016px){
-    .gallery{
+@media (max-width: 1274px){
+    .gallery{ // 4 колонки
         width:1016px;
     }
-}
-
-@media (max-width: 1024px){
-    .gallery{
-        width:800px;
+    .container{
+        width:988px;
+    }
+    .pager{
+        right:-5px;
     }
 }
 
-@media (max-width: 800){
+@media (max-width: 1030px){
+    .gallery{ // 3 колонки
+        width:762px;
+    }
+    .container{
+        width:734px;
+    }
+    #footer{
+        overflow: hidden;
+        height:auto;
+        
+        h3{
+            width:100%;
+            text-align: center;
+            margin-left:0;
+            margin-right:0;
+        }
+        
+        .nav_btm{
+            overflow:hidden;
+            width:100%;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 800px){
+    .gallery{
+        width:508px;
+    }
+    
+    .container, .container_min{
+        width:100%;
+    }
+    
+    #header{
+        #header_top	{
+            text-align: center;
+            
+            a{
+                text-align: center;
+                
+                img{
+                    float:none !important;
+                }
+            }
+            
+            #menu_toggler{
+                display:block !important;
+            }
+            
+            .nav{
+                display:none;
+                position:absolute;
+                width:100%;
+                
+                li{
+                    float:none;
+                    width:100%;
+                    
+                    a{
+                        width:100%;
+                        padding-left:0 !important;
+                        padding-right:0 !important;
+                        text-align: center;
+                        
+                        &:after{
+                            display:none !important;
+                        }
+                    }
+                    
+                    .sub{
+                        display:block !important;
+                        position:relative !important;
+                        float:left;
+                        width:100%;
+                        padding-top:0 !important;
+                        background: #1a1a1a;
+                        overflow: hidden;
+                        box-shadow: inset 0 2px 3px #000;
+                        padding-bottom:10px;
+                        
+                        li{
+                            float:left;
+                            
+                            a{
+                                padding:15px;
+                                padding-left: 50px;
+                                font-size:12px !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px){
     .pager{
         text-align: center;
+        right:0;
+    }
+}
+
+@media (max-width: 600px){
+    .gallery{
+        width:254px;
     }
 }
