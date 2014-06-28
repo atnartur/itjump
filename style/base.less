@@ -584,10 +584,91 @@ h1.people_of_project{
                             text-decoration: underline;
                         }
                     }
+                } // post_content
+            } // post
+        } // main_posts
+        
+        .fullpost{
+            margin-top:30px;
+            
+            img{
+                max-width:100%;
+                
+                &.center{
+                    text-align: center;
                 }
-            }   
+                &.left{
+                    text-align: left;
+                }
+                &.right{
+                    text-align: right;
+                }
+                
+                &.float_left{
+                    float:left;
+                }
+                &.float_right{
+                    float:right;
+                }
+            }
+            
+            h1, h2, h3, h4, h5, h6{
+                clear: both;
+                font-family: 'Open Sans';
+                font-weight: bold;
+                margin-top:20px;
+                margin-bottom:20px;
+            }
+            
+            p{
+                font-family: 'Open Sans';
+                font-size: 16px;
+                color:#4E4D4D;
+                margin-top:20px;
+                margin-bottom:20px;
+                line-height: 1.5;
+            }
+            
+            a{
+                color: #0018FF;
+                
+                &:hover{
+                    color:#000857;
+                }
+            }
+            
+            blockquote{
+                float: left;
+                color:#000;
+                font-style: italic;
+                font-size:16px;
+                padding:10px;
+                
+            }
+            blockquote:before {  
+                content: open-quote;  
+                font-size: 24pt;  
+                text-align: center;
+                color: #ddd;  
+                float: left;  
+                position: relative;  
+                display: block;  
+                padding:10px;
+                margin-right:5px;
+            }  
+            blockquote:after {  
+                content: close-quote;  
+                font-size: 24pt;  
+                text-align: center;  
+                color: #ddd;  
+                float: right;   
+                display: block;
+                padding:10px;
+                margin-left:5px;
+            }
         }
-    }
+        
+    } // content_main_left
 
     #content_main_right{
         margin-left: @content_main_margin;
@@ -995,6 +1076,13 @@ h1.people_of_project{
                 .post_content{
                     width: @gallery - @gallery_margins - @content_main_post_content_margin - @content_main_post_img_width !important;
                 }
+            }
+        }
+        
+        .fullpost{
+            p, h1, h2, h3, h4, h5, h6, blockquote{
+                padding-left:16px;
+                padding-right:16px;
             }
         }
     }
