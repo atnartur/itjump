@@ -53,8 +53,8 @@ function lead_main_resize(){
         
         var margin_top = (lead - content) / 2;
         
-        if (margin_top < 0) {
-            margin_top = 0;
+        if (margin_top < 30) {
+            margin_top = 30;
         }
         
         $('#lead.main #lead_main_content').css('margin-top', margin_top  + 'px');
