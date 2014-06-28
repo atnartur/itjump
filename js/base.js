@@ -1,6 +1,7 @@
-window.small = false;
+window.small = false; // флаг маленького экрана
 
-function dropdown_init() {
+// выпадающее меню
+function dropdown_init() { 
     $('#header .nav > li').each(function(){
         if ($(this).children('.sub').length > 0)
             $(this).addClass('dropdown');
@@ -15,12 +16,14 @@ function dropdown_init() {
     });
 }
 
+// кнопка для показывания меню на маленьких экранах
 function menu_toggler_init() {
     $('#menu_toggler').click(function(){
         $('#header .nav').slideToggle(200);
     });
 }
 
+// показывает или скрывает кнопку показывания меню на маленьких экранах
 function menu_toggler_resize(){
     var width = $(window).width();
     
@@ -38,6 +41,7 @@ function menu_toggler_resize(){
     }
 }
 
+// изменяет размеры верхней части на главной странице
 function lead_main_resize(){
     if ($('#lead.main').length === 1) {
         var win = $(window).height();

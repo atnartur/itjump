@@ -168,7 +168,6 @@ img{
         background-size:cover;
         
         #lead_main_content{
-        
             h1{
                 font-family: Arial;
                 font-size: 38px;
@@ -209,8 +208,8 @@ img{
                 display: inline-block;
                 cursor: pointer;
             }
-        }
-    }
+        } // lead_main_content
+    } // main
 } // #header_btm
 
 .gallery{
@@ -269,8 +268,8 @@ img{
             color: #3b3b3b;
             font-weight: bold;
         }
-    }
-}
+    } // partner
+} // partners
 
 @person_width: 341px;
 
@@ -327,9 +326,9 @@ img{
                 color: #3b3b3b;
                 font-weight: bold;
             }
-        }
-    }
-}
+        } // person_btm
+    } // person
+} // persons 
 
 @project_img_width: 659px;
 @project_margin: 63px;
@@ -399,9 +398,9 @@ img{
                     }
                 }
             }
-        }
-    }
-}
+        } // info
+    } // project_content
+} // project
 h1.people_of_project{
 	font-family: Arial;
 	font-size: 24px;
@@ -539,7 +538,7 @@ h1.people_of_project{
                         content: 'тур';
                         background: #EF6368;
                     }
-                }
+                } // img
                 
                 .post_content{
                     float:left;
@@ -666,7 +665,7 @@ h1.people_of_project{
                 padding:10px;
                 margin-left:5px;
             }
-        }
+        } // fullpost
         
     } // content_main_left
 
@@ -768,7 +767,7 @@ h1.people_of_project{
             }
         }
     }
-}
+} // footer
 
 
 
@@ -779,6 +778,7 @@ h1.people_of_project{
 
 @media (min-width: 1275px){
     @gallery: 1275px;
+    
     .gallery{ // 5 колонок галерея
         width: @gallery;
     }
@@ -790,6 +790,7 @@ h1.people_of_project{
 
 @media (max-width: 1274px){
     @gallery: 1016px;
+    
     .gallery{ // 4 колонки
         width: @gallery;
     }
@@ -843,10 +844,11 @@ h1.people_of_project{
             }
         }
     }
-}
+} // @media (max-width: 1274px)
 
 @media (max-width: 1030px){
     @gallery: 762px;
+    
     .gallery{ // 3 колонки
         width: @gallery;
     }
@@ -923,10 +925,11 @@ h1.people_of_project{
             text-align: center;
         }
     }
-}
+} // @media (max-width: 1030px){
 
 @media (max-width: 800px){
     @gallery: 508px;
+    
     .gallery{
         width: @gallery;
     }
@@ -1036,9 +1039,9 @@ h1.people_of_project{
                         }
                     }
                 }
-            }
-        }
-    }
+            } // li
+        } // nav
+    } // header
     
     #lead{
         &.main{
@@ -1086,7 +1089,7 @@ h1.people_of_project{
             }
         }
     }
-}
+} // @media (max-width: 800px)
 
 @media (max-width: 600px){
     @gallery: 254px; 
@@ -1133,6 +1136,7 @@ h1.people_of_project{
         }
     }
 }
+
 @media (max-width: 340px){
     .persons{
         .person{
