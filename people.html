@@ -1,130 +1,138 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>People</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="style/people.css">
-   </head>
-   <body>
-   	<div class="header">
-   		<div class="header_top">
-   			<img src="img/logo.png">
-   			<div class="nav">
-   				<a href="#">Home</a>
-   				<select class="select">
-   					<option>Pages</option>
-   					<option>Home</option>
-   					<option>Gallery</option>
-   					<option>People</option>
-   					<option>Partner</option>
-   				</select>
-   				<select class="select_2">
-   					<option>Projects</option>
-   					<option>Home</option>
-   					<option>Gallery</option>
-   					<option>People</option>
-   					<option>Partner</option>
-   				</select>
-   				<select class="select_2">
-   					<option>About</option>
-   					<option>Home</option>
-   					<option>Gallery</option>
-   					<option>People</option>
-   					<option>Partner</option>
-   				</select>
-   				<a href="#">Gallery</a>
-   			</div>
-   		</div>
-   			<div class="header_btm">
-   				<h1>Single blog title</h1>
-   				<h3>This is a single blog caption</h3>
-   		</div>
+<head>
+    <title>Gallery - IT-Jump</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic-ext,cyrillic,greek,greek-ext' rel='stylesheet' type='text/css'>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/base.js"></script>
+    <link rel="stylesheet/less" type="text/css" href="style/base.less">
+    
+    <script>
+        less = {
+            debug: true,
+            env: "development"
+        }
+    </script>
+    <script src="js/less.min.js"></script>
+</head>
+<body>
+   	<div id="header" class="container_min">
+        <div id="header_content" class="container">
+            <a href="#">
+                <img src="img/logo.png">
+            </a>
+            <div id="menu_toggler"></div>
+            <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li>
+                    <a href="#">Pages</a>
+                    <ul class="sub">
+                        <li><a href="main.html">Main</a></li>
+                        <li><a href="partner.html">Partner</a></li>
+                        <li><a href="people.html">People</a></li>
+                        <li><a href="project.html">Project</a></li>
+                        <li><a href="texters.html">Texters</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Projects</a>
+                    <ul class="sub">
+                        <li><a href="#">Sub 1</a></li>
+                        <li><a href="#">Sub 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                    <ul class="sub">
+                        <li><a href="#">Sub 1</a></li>
+                        <li><a href="#">Sub 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </div>
    	</div>
-<div class="content">
-   <div class="content_top">
-      <div class="person">
-         <div class="person_top">
-            <img src="img/person.png">
-         </div>
-         <div class="person_btm">
-            <h1>Davidd Jackson</h1>
-            <h3>Web Developer</h3>
-            <p>Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec ullamcorper nulla non metus auctor.</p>
-            <h4>Google California</h4>
-         </div>
-      </div>
-      <div class="person">
-         <div class="person_top">
-            <img src="img/person.png">
-         </div>
-         <div class="person_btm">
-             <h1>Davidd Jackson</h1>
-            <h3>Web Developer</h3>
-            <p>Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec ullamcorper nulla non metus auctor.</p>
-            <h4>Google California</h4>
-         </div>
-      </div>
-      <div class="person">
-         <div class="person_top">
-            <img src="img/person.png">
-         </div>
-         <div class="person_btm">
-             <h1>Davidd Jackson</h1>
-            <h3>Web Developer</h3>
-            <p>Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec ullamcorper nulla non metus auctor.</p>
-            <h4>Google California</h4>
-         </div>
-      </div>
-   </div>
-   <div class="content_btm">
-      <div class="person">
-         <div class="person_top">
-            <img src="img/person.png">
-         </div>
-         <div class="person_btm">
-             <h1>Davidd Jackson</h1>
-            <h3>Web Developer</h3>
-            <p>Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec ullamcorper nulla non metus auctor.</p>
-            <h4>Google California</h4>
-         </div>
-      </div>
-      <div class="person">
-         <div class="person_top">
-            <img src="img/person.png">
-         </div>
-         <div class="person_btm">
-             <h1>Davidd Jackson</h1>
-            <h3>Web Developer</h3>
-            <p>Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec ullamcorper nulla non metus auctor.</p>
-            <h4>Google California</h4>
-         </div>
-      </div>
-      <div class="person">
-         <div class="person_top">
-            <img src="img/person.png">
-         </div>
-         <div class="person_btm">
-            <h1>Davidd Jackson</h1>
-            <h3>Web Developer</h3>
-            <p>Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec ullamcorper nulla non metus auctor.</p>
-            <h4>Google California</h4>
-         </div>
-      </div>
-   </div>
-</div>
+    <div id="lead" class="title container_min">
+        <h1>Single blog title</h1>
+        <h3>This is a single blog caption</h3>
+    </div>
+    <div class="container">
+        <div class="persons">
+            <div class="person">
+                <img src="img/person.png">
+                <div class="person_btm">
+                    <h1>Davidd Jackson</h1>
+                    <h2>Web Developer</h2>
+                    <p>Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec ullamcorper nulla non metus auctor.</p>
+                    <h3>Google California</h3>
+                </div>
+            </div>
+            <div class="person">
+                <img src="img/person.png">
+                <div class="person_btm">
+                    <h1>Davidd Jackson</h1>
+                    <h2>Web Developer</h2>
+                    <p>Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec ullamcorper nulla non metus auctor.</p>
+                    <h3>Google California</h3>
+                </div>
+            </div>
+            <div class="person">
+                <img src="img/person.png">
+                <div class="person_btm">
+                    <h1>Davidd Jackson</h1>
+                    <h2>Web Developer</h2>
+                    <p>Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec ullamcorper nulla non metus auctor.</p>
+                    <h3>Google California</h3>
+                </div>
+            </div>
+            <div class="person">
+                <img src="img/person.png">
+                <div class="person_btm">
+                    <h1>Davidd Jackson</h1>
+                    <h2>Web Developer</h2>
+                    <p>Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec ullamcorper nulla non metus auctor.</p>
+                    <h3>Google California</h3>
+                </div>
+            </div>
+            <div class="person">
+                <img src="img/person.png">
+                <div class="person_btm">
+                    <h1>Davidd Jackson</h1>
+                    <h2>Web Developer</h2>
+                    <p>Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec ullamcorper nulla non metus auctor.</p>
+                    <h3>Google California</h3>
+                </div>
+            </div>
+            <div class="person">
+                <img src="img/person.png">
+                <div class="person_btm">
+                    <h1>Davidd Jackson</h1>
+                    <h2>Web Developer</h2>
+                    <p>Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec ullamcorper nulla non metus auctor.</p>
+                    <h3>Google California</h3>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
 
-<div class="footer">
-   <h3>Copyright © 2014</h3>
-<div class="nav_btm">
-   <a href="#">Home</a>
-   <a href="#">Pages</a>
-   <a href="#">Projects</a>
-   <a href="#">About</a>
-   <a href="#">Gallery</a>
-   </div>
-</div>
-   </body>
-   </html>
+    <div id="footer" class="container_min">
+        <div class="container">
+            <h3>&copy; 2014 <a href="#">IT-Jump</a> (with Matvey Bleyy, <a target="_blank" href="http://clienddev.ru">ClienDDev team</a> and <a target="_blank" href="http://cake-it.ru">Cakeit team</a>) </h3>
+            <div class="nav_btm">
+                <a href="#">Home</a>
+                <a href="#">Pages</a>
+                <a href="#">Projects</a>
+                <a href="#">About</a>
+                <a href="#">Gallery</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
