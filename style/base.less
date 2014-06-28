@@ -191,7 +191,7 @@ img{
                 font-size: 19px;
                 color: white;
                 font-weight: lighter;
-                width: 540px;
+                max-width:580px;
                 line-height: 33px;
             }
               
@@ -254,6 +254,9 @@ img{
     }
 }
 
+@main_first_posts_width: 314px;
+@main_first_posts_paddings: 100px; 
+
 .main_first_posts{
     clear: both;
     overflow: hidden;
@@ -263,7 +266,7 @@ img{
         padding-bottom:40px;
         padding-right:50px;
         padding-left:50px;
-        width:315px;
+        width: @main_first_posts_width;
         float:left;
         text-align: center;
         
@@ -278,7 +281,6 @@ img{
         h2{
             font-family: 'Open Sans', sans-serif;
             font-size: 17px;
-            width: 360px;
             color: #aeaeae;
             margin: 0 auto;
         }
@@ -293,11 +295,16 @@ img{
     }
 }
 
+@content_main_left_width: 896px;
+@content_main_post_content_margin: 29px;
+@content_main_post_img_width: 251px;
+@content_main_right_width: 300px;
+@content_main_margin: 50px;
+
 #content_main{
     overflow: hidden;
     
     #content_main_left{
-        @content_main_left_width: 896px; 
         width:@content_main_left_width;
         float:left;
         overflow: hidden;
@@ -310,11 +317,8 @@ img{
                 margin-bottom:30px;
                 display: block;
                 
-                @post_img_width: 251px; 
-                
                 .img{
-                    
-                    width:@post_img_width;
+                    width:@content_main_post_img_width;
                     float:left;
                     display: block;
                     
@@ -355,7 +359,7 @@ img{
                 .post_content{
                     float:left;
                     margin-left: 29px;
-                    width:@content_main_left_width - @post_img_width - 29;
+                    width:@content_main_left_width - @content_main_post_img_width - @content_main_post_content_margin;
                     
                     h1{
                         font-family: Arial;
@@ -401,10 +405,10 @@ img{
     }
 
     #content_main_right{
-        margin-left:50px;
+        margin-left: @content_main_margin;
         float: left;
         overflow: hidden;
-        width:  300px;
+        width:  @content_main_right_width;
         
         
         .block{
@@ -497,5 +501,215 @@ img{
                 text-decoration: underline;
             }
         }
+    }
+}
+
+
+
+
+///////////////// MEDIA QUERIES ////////////////////
+
+@gallery_margins: 28px;
+
+@media (min-width: 1275px){
+    @gallery: 1275px;
+    .gallery{ // 5 колонок галерея
+        width: @gallery;
+    }
+    .container{
+        width: @gallery - @gallery_margins;
+    }
+}
+
+@media (max-width: 1274px){
+    @gallery: 1016px;
+    .gallery{ // 4 колонки
+        width: @gallery;
+    }
+    .container{
+        width: @gallery - @gallery_margins;
+    }
+    .pager{
+        right:-5px;
+    }
+    
+    .main_first_posts{
+        .post{
+            padding-left:5px;
+            padding-right:5px;
+        }
+    }
+    
+    #content_main_left{
+        width: @gallery - @gallery_margins - @content_main_right_width - @content_main_margin !important;
+        
+        .main_posts{
+            .post{
+                .post_content{
+                    width: @gallery - @gallery_margins - @content_main_right_width - @content_main_margin - @content_main_post_content_margin - @content_main_post_img_width !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1030px){
+    @gallery: 762px;
+    .gallery{ // 3 колонки
+        width: @gallery;
+    }
+    .container{
+        width: @gallery - @gallery_margins;
+    }
+    
+    .main_first_posts{
+        .post{
+            margin:0 auto;
+            float: none;
+            width:100%;
+            padding:0;
+            padding-top:20px;
+            padding-bottom:20px;
+        }
+    }
+    
+    #content_main_left{
+        width: @gallery - @gallery_margins !important;
+        
+        .main_posts{
+            .post{
+                .post_content{
+                    width: @gallery - @gallery_margins - @content_main_post_content_margin - @content_main_post_img_width !important;
+                }
+            }
+        }
+    }
+    #content_main_right{
+        width: @gallery - @gallery_margins !important;
+        margin-left:0 !important;
+        margin-bottom:50px;
+    }
+    
+    #footer{
+        overflow: hidden;
+        height:auto;
+        
+        h3{
+            width:100%;
+            text-align: center;
+            margin-left:0;
+            margin-right:0;
+        }
+        
+        .nav_btm{
+            overflow:hidden;
+            width:100%;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 800px){
+    @gallery: 508px;
+    .gallery{
+        width: @gallery;
+    }
+    
+    .container, .container_min{
+        width:100%;
+    }
+    
+    #header{
+        text-align: center;
+        
+        a{
+            text-align: center;
+            
+            img{
+                float:none !important;
+            }
+        }
+        
+        #menu_toggler{
+            display:block !important;
+        }
+        
+        .nav{
+            position:absolute;
+            width:100%;
+            
+            li{
+                float:none;
+                width:100%;
+                
+                a{
+                    width:100%;
+                    padding-left:0 !important;
+                    padding-right:0 !important;
+                    text-align: center;
+                    
+                    &:after{
+                        display:none !important;
+                    }
+                }
+                
+                .sub{
+                    display:block !important;
+                    position:relative !important;
+                    float:left;
+                    width:100%;
+                    padding-top:0 !important;
+                    background: #1a1a1a;
+                    overflow: hidden;
+                    box-shadow: inset 0 2px 3px #000;
+                    padding-bottom:10px;
+                    
+                    li{
+                        float:left;
+                        
+                        a{
+                            padding:15px;
+                            padding-left: 50px;
+                            font-size:12px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    #lead{
+        &.main{
+            height:  auto !important;
+            padding-bottom:10px;
+            margin-top:0 !important;
+            
+            #lead_main_content{
+                width:100%;
+                text-align: center;
+                padding:0;
+                
+                h3{
+                    display: block;
+                    margin: 0 auto;
+                    padding:  5px;
+                    margin-top:51px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px){
+    .pager{
+        text-align: center;
+        right:0;
+    }
+}
+
+@media (max-width: 600px){
+    @gallery: 254px; 
+    .gallery{
+        width: @gallery;
     }
 }

@@ -24,7 +24,7 @@ function menu_toggler_init() {
 function menu_toggler_resize(){
     var width = $(window).width();
     
-    if (width < 800) {
+    if (width < 790) {
         if (window.small === false){
             window.small = true;
             $('#header .nav').hide();
